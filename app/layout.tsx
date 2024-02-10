@@ -12,7 +12,7 @@ import type { Metadata } from "next";
 
 const title = "something";
 const description = "The plate is boiling. Just craft something!";
-const image = "https://raw.githubusercontent.com/somehq/something/main/.github/og.png";
+const image = "https://raw.githubusercontent.com/somehq/somestatic/main/something/og.png";
 
 export const metadata: Metadata = {
   title: title,

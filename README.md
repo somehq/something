@@ -1,4 +1,4 @@
-![something](https://raw.githubusercontent.com/somehq/something/main/.github/banner.png)
+![something](https://raw.githubusercontent.com/somehq/somestatic/main/something/banner.png)
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 Just check out the [hosted demo](https://something-demo.vercel.app).
