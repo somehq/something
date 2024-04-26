@@ -9,10 +9,10 @@ import { geistSans } from "@/styles/fonts";
 
 import type { Metadata } from "next";
 
-
 const title = "something";
 const description = "The plate is boiling. Just craft something!";
-const image = "https://raw.githubusercontent.com/somehq/somestatic/main/something/og.png";
+const image =
+  "https://raw.githubusercontent.com/somehq/somestatic/main/something/og.png";
 
 export const metadata: Metadata = {
   title: title,
@@ -30,15 +30,22 @@ export const metadata: Metadata = {
     images: [image],
     creator: "@snelusha",
   },
-  metadataBase: new URL("http://localhost:3000")
+  metadataBase: new URL("http://localhost:3000"),
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={cn("font-sans text-secondary-dark bg-primary antialiased", geistSans.variable)}>
+      <body
+        className={cn(
+          "bg-background font-sans text-sm text-secondary-foreground antialiased",
+          geistSans.variable,
+        )}
+      >
         <Providers>{children}</Providers>
       </body>
     </html>
-  )
-};
+  );
+}
